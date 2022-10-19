@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3F7BF78-FC8F-403C-AC80-47E6DE9B7384}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MCGCore</RootNamespace>
+    <AssemblyName>MCGCore</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Common\ExcelParser.cs" />
+    <Compile Include="Core\Common\ExcelReader.cs" />
+    <Compile Include="Core\Common\HashManager.cs" />
+    <Compile Include="Core\Common\ProgramConfiguration.cs" />
+    <Compile Include="Core\Common\StreamManager.cs" />
+    <Compile Include="Core\Console\IConsole.cs" />
+    <Compile Include="Core\Console\StaticConsole.cs" />
+    <Compile Include="Core\Data\DrawTable.cs" />
+    <Compile Include="Core\Data\NftDNA.cs" />
+    <Compile Include="Core\Data\NftAttributeTable.cs" />
+    <Compile Include="Core\Data\AttributeGroup.cs" />
+    <Compile Include="Core\Data\RandomDNA.cs" />
+    <Compile Include="Core\Editor\ImagePart.cs" />
+    <Compile Include="Core\Editor\LayerElement.cs" />
+    <Compile Include="Core\Extension\CollectionExtension.cs" />
+    <Compile Include="Core\Extension\StringExtension.cs" />
+    <Compile Include="Core\Generator\McgMemoryResources.cs" />
+    <Compile Include="Core\Editor\ProgramSetting.cs" />
+    <Compile Include="Core\Exception\McgException.cs" />
+    <Compile Include="Core\Extension\ListExtension.cs" />
+    <Compile Include="Core\Extension\MathExtension.cs" />
+    <Compile Include="Core\Generator\McgGenerator.cs" />
+    <Compile Include="Core\ImageProcessing\Color32.cs" />
+    <Compile Include="Core\ImageProcessing\ImageProcessor.cs" />
+    <Compile Include="Core\Data\IMetadataAttribute.cs" />
+    <Compile Include="Core\Common\JsonHandler.cs" />
+    <Compile Include="Core\Editor\Layer.cs" />
+    <Compile Include="Core\Data\Localization.cs" />
+    <Compile Include="Core\Editor\McgProject.cs" />
+    <Compile Include="Core\Data\NftCollectionData.cs" />
+    <Compile Include="Core\Editor\McgEditor.cs" />
+    <Compile Include="Core\Data\NftPair.cs" />
+    <Compile Include="Core\Editor\McgProjectConfiguration.cs" />
+    <Compile Include="Core\Data\StaticPathAndFile.cs" />
+    <Compile Include="MainProgram.cs" />
+    <Compile Include="Core\Data\TraitAttributeGeneric.cs" />
+    <Compile Include="Core\Data\NftMetadata.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

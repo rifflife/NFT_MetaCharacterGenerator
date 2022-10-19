@@ -11,6 +11,7 @@ NFT 플렛폼에 쉽게 업로드 할 수 있도록 2차원 이미지를 조합,
 * 고유한 Seed로 생성 가능
 * 조합한 뒤에는 NFT 이미지와 등록을 위한 Json 메타데이터를 생성
 * Excel로 Index파일을 작성 후 프로그램에 경로를 입력해서 생성 진행
+* 생성된 NFT에 대한 속성 테이블을 csv파일로 저장함
 
 ## MCG Winform Test Version
 

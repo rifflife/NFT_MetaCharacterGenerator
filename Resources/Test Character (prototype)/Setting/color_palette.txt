@@ -1,0 +1,57 @@
+# Character Generator Color Code
+
+# Hair Colors
+[FrontHair, BackHair, Eyebrow]
+
+F9ED6D # yellow
+3D5EAA
+7A89BF
+FFB9E9 # pink
+9BECFF
+252B39
+FF3540
+F4F4F4
+5ABC6A
+F7A82D
+804125
+
+# Eyes Colors
+[LeftEye, RightEye]
+
+8ADDFF
+EB2741
+DDD11E
+8531C0
+C167A9
+4CA96D
+64341E
+
+# Character Face Skin Colors
+[Face]
+
+FFF9EB
+FFE2BF
+BC9F86
+8D6652
+
+# Picture Background Colors
+[Background]
+
+FCB57C
+E8E4A2
+6dce5f
+40DEE0
+3E75C7
+ef8df0
+EC619F
+F56D76
+
+1d5c4b
+5c1d55
+231a54
+1a542d
+5b4519
+50180d
+
+686868
+212121

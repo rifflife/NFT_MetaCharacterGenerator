@@ -1,0 +1,51 @@
+{
+  "name": "# My NFT Character 33",
+  "attribute": [
+    {
+      "trait_type": "Skin Color",
+      "value": "Little Bright",
+      "chance": 1000
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Cat Mouth",
+      "chance": 1000
+    },
+    {
+      "trait_type": "Eyes Color",
+      "value": "Blue",
+      "chance": 1000
+    },
+    {
+      "trait_type": "Eyes Type",
+      "value": "Eyes Type 5",
+      "chance": 1000
+    },
+    {
+      "trait_type": "Eyebrow",
+      "value": "Sad",
+      "chance": 1000
+    },
+    {
+      "trait_type": "Front Hair",
+      "value": "Front Hair Type 5",
+      "chance": 1000
+    },
+    {
+      "trait_type": "Back Hair",
+      "value": "Back Hair Type 1",
+      "chance": 200
+    }
+  ],
+  "collection_name": "My NFT Character",
+  "dna": "8c00b7f8f109e9ca5ac1e278cc68bdf4d4c1e6d930b8c70513d18e82fc94aeba",
+  "draw_table": [
+    "5f4de798efea9f7a2848300f2130efd57be5b26e445e93b50c91038a604b356f",
+    "e4b0de8bc3af52ce55bf718e72700ceb6afbeee92ae586fe5362e1f91631fffa",
+    "8c1e08045d394b5c884b7d49aa11134f9161c51d3a8483c90b64d29ce66896fd",
+    "593aa0b2891a2ef0c93f2acf66b29d49132dd61c25137f2fbb51baf2ab5a843a",
+    "dde0cc03e04dc0930a962c6eff30bcb38bab24ab0872fff6e4143eaa0580eb77",
+    "7d72f234f747590a8de232e08ab0b867b9005caa483ea3e2e99eb207f6b43a74",
+    "c81be44f18fee0eed45a1be8de72147badc5983a9acb4e36dc9415e6e81e6a35"
+  ]
+}
